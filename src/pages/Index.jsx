@@ -37,7 +37,7 @@ const Index = () => {
 
       <VStack flex="1" p="4" spacing="4" overflowY="auto">
         {/* Example messages */}
-        <Box alignSelf="flex-start" bg="white" p="3" borderRadius="lg">
+        <Box alignSelf="flex-start" bg="white" p="3" borderRadius="lg" marginLeft="70px">
           <Text fontWeight="bold">Hello! How can I help you today?</Text>
         </Box>
         <Box alignSelf="flex-end" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" p="3" borderRadius="lg">
@@ -48,12 +48,12 @@ const Index = () => {
       </VStack>
 
       <Flex p="4" alignItems="center">
-        <Input placeholder="Type a message..." flex="1" color="white" fontWeight="bold" />
+        <Input placeholder="Type a message..." flex="0.8" color="white" fontWeight="bold" />
         <IconButton ml="2" icon={<FaFileUpload />} onClick={uploadFile} />
         <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} />
       </Flex>
 
-      <Box position="fixed" left="0" top="0" height="100vh" width="60px" bg="gray.100" borderRadius="0 10px 10px 0">
+      <Box position="fixed" left="10px" top="60px" height="calc(100vh - 60px)" width="60px" bg="gray.100" borderRadius="10px">
         <VStack spacing="4" p="4">
           <IconButton icon={<FaHistory />} color="green.500" variant="ghost" />
           <IconButton icon={<FaCog />} color="blue.500" variant="ghost" />
