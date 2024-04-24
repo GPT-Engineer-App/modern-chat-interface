@@ -53,7 +53,7 @@ const Index = () => {
         <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} mr="2" />
       </Flex>
 
-      <Box position="fixed" left="10px" top="60px" height="calc(100vh - 60px)" width="60px" bg="gray.100" borderRadius="10px">
+      <Box position="fixed" left="10px" top="70px" height="calc(100vh - 80px)" width="60px" bg="gray.100" borderRadius="10px">
         <VStack spacing="4" p="4">
           <IconButton icon={<FaHistory />} color="green.500" variant="ghost" />
           <IconButton icon={<FaCog />} color="blue.500" variant="ghost" />
