@@ -41,12 +41,14 @@ const Index = () => {
           <Text>Hello! How can I help you today?</Text>
         </Box>
         <Box alignSelf="flex-end" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" p="3" borderRadius="lg">
-          <Text>Can you show me the latest tech news?</Text>
+          <Text color="white" fontWeight="bold">
+            Can you show me the latest tech news?
+          </Text>
         </Box>
       </VStack>
 
       <Flex p="4" alignItems="center">
-        <Input placeholder="Type a message..." flex="1" />
+        <Input placeholder="Type a message..." flex="1" color="white" fontWeight="bold" />
         <IconButton ml="2" icon={<FaFileUpload />} onClick={uploadFile} />
         <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} />
       </Flex>
