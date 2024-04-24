@@ -37,8 +37,8 @@ const Index = () => {
 
       <VStack flex="1" p="4" spacing="4" overflowY="auto">
         {/* Example messages */}
-        <Box alignSelf="flex-start" bg="gray.200" p="3" borderRadius="lg">
-          <Text>Hello! How can I help you today?</Text>
+        <Box alignSelf="flex-start" bg="white" p="3" borderRadius="lg">
+          <Text fontWeight="bold">Hello! How can I help you today?</Text>
         </Box>
         <Box alignSelf="flex-end" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" p="3" borderRadius="lg">
           <Text color="white" fontWeight="bold">
