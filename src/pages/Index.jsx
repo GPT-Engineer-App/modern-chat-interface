@@ -47,10 +47,10 @@ const Index = () => {
         </Box>
       </VStack>
 
-      <Flex p="4" alignItems="center">
-        <Input placeholder="Type a message..." flex="0.8" color="white" fontWeight="bold" />
+      <Flex p="4" alignItems="center" justifyContent="flex-end">
+        <Input placeholder="Type a message..." flex="1" color="white" fontWeight="bold" />
         <IconButton ml="2" icon={<FaFileUpload />} onClick={uploadFile} />
-        <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} />
+        <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} mr="2" />
       </Flex>
 
       <Box position="fixed" left="10px" top="60px" height="calc(100vh - 60px)" width="60px" bg="gray.100" borderRadius="10px">
