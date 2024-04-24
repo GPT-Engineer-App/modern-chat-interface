@@ -55,11 +55,19 @@ const Index = () => {
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
+        <DrawerContent bg="black">
+          <DrawerCloseButton color="white" />
+          <DrawerHeader borderBottomWidth="1px" color="white">
+            Menu
+          </DrawerHeader>
           <DrawerBody>
             <List spacing="4">
+              <ListItem>
+                <Avatar size="sm" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTcxMzk5OTgxMXww&ixlib=rb-4.0.3&q=80&w=1080" />
+                <Text ml="3" color="white" fontWeight="bold">
+                  User Profile
+                </Text>
+              </ListItem>
               <ListItem>
                 <ListIcon as={FaHistory} color="green.500" />
                 Previous Chats
