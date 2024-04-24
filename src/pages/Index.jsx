@@ -32,7 +32,7 @@ const Index = () => {
       <Flex p="4" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" color="white" justifyContent="space-between" alignItems="center">
         <IconButton icon={<FaBars />} variant="outline" colorScheme="whiteAlpha" onClick={onOpen} />
         <Text fontSize="2xl">ChatGPT iOS App</Text>
-        <Avatar name="User" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTcxMzk5OTgxMXww&ixlib=rb-4.0.3&q=80&w=1080" />
+        <Avatar as="a" href="/profile" name="User" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHx1c2VyJTIwYXZhdGFyfGVufDB8fHx8MTcxMzk5OTgxMXww&ixlib=rb-4.0.3&q=80&w=1080" />
       </Flex>
 
       <VStack flex="1" p="4" spacing="4" overflowY="auto">
