@@ -28,7 +28,7 @@ const Index = () => {
   };
 
   return (
-    <Flex height="100vh" direction="column">
+    <Flex height="100vh" direction="column" bg="black">
       <Flex p="4" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" color="white" justifyContent="space-between" alignItems="center">
         <IconButton icon={<FaBars />} variant="outline" colorScheme="whiteAlpha" onClick={onOpen} />
         <Text fontSize="2xl">ChatGPT iOS App</Text>
@@ -40,7 +40,7 @@ const Index = () => {
         <Box alignSelf="flex-start" bg="gray.200" p="3" borderRadius="lg">
           <Text>Hello! How can I help you today?</Text>
         </Box>
-        <Box alignSelf="flex-end" bg="blue.300" p="3" borderRadius="lg">
+        <Box alignSelf="flex-end" bg="linear-gradient(to right, #FF007F, #E100FF, #FF7F00)" p="3" borderRadius="lg">
           <Text>Can you show me the latest tech news?</Text>
         </Box>
       </VStack>
