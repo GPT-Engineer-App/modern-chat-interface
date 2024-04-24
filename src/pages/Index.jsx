@@ -53,29 +53,13 @@ const Index = () => {
         <IconButton ml="2" icon={<FaPaperPlane />} colorScheme="blue" onClick={sendMessage} />
       </Flex>
 
-      <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
-          <DrawerBody>
-            <List spacing="4">
-              <ListItem>
-                <ListIcon as={FaHistory} color="green.500" />
-                Previous Chats
-              </ListItem>
-              <ListItem>
-                <ListIcon as={FaCog} color="blue.500" />
-                Settings
-              </ListItem>
-              <ListItem>
-                <ListIcon as={FaSignInAlt} color="red.500" />
-                Login
-              </ListItem>
-            </List>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
+      <Box position="fixed" left="0" top="0" height="100vh" width="60px" bg="gray.100" borderRadius="0 10px 10px 0">
+        <VStack spacing="4" p="4">
+          <IconButton icon={<FaHistory />} color="green.500" variant="ghost" />
+          <IconButton icon={<FaCog />} color="blue.500" variant="ghost" />
+          <IconButton icon={<FaSignInAlt />} color="red.500" variant="ghost" />
+        </VStack>
+      </Box>
     </Flex>
   );
 };
